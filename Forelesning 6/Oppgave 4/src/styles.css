@@ -13,21 +13,21 @@ body {
     background-color: #182A55;
 }
 
-.header-img {
+.header {
     margin: 0;
     grid-column: 1 / span 2;
     text-align: center;
     position: relative;
 }
 
-.header-img img{
+.header img{
     grid-column: 1 / span 2;
     object-fit: cover;
     width: 100%;
     height: 200px;
 }
 
-.header-img h1 {
+.header h1 {
     position: absolute;
     margin: auto;
     top: 0;
@@ -52,12 +52,20 @@ body {
     border-radius: 15px;
     border: 5px solid #ABC13A;
     text-shadow: 5px 5px 5px #182A55;
+    outline: none;
+    cursor: pointer;
 }
+
 
 .topic-button:hover {
     -webkit-box-shadow: 0px 0px 20px rgb(205, 132, 241, 0.6);
         -moz-box-shadow: 0px 0px 20px rgb(205, 132, 241, 0.6);
         box-shadow: 0px 0px 20px rgb(205, 132, 241, 0.6);
+        transform: scale(1.03)
+}
+
+.topic-button:active {
+    transform: scale(.98)
 }
 
 
